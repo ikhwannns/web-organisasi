@@ -1,0 +1,66 @@
+GET http://localhost:9900/users
+
+# Get User By Id
+###
+GET http://localhost:9900/users/a4d4b3c7-80cb-40fc-8115-4b1d5cab0b73
+
+# Create User
+###
+POST http://localhost:9900/users
+Content-Type: application/json
+
+{
+    "name": "admin",
+    "email": "immajfebuh@gmail.com",
+    "password": "immajfebuh",
+    "confPassword": "immajfebuh"
+}
+
+
+# Update User
+###
+PUT http://localhost:9900/users/49704e60-b349-4935-8fa0-8aa0405dfcf6
+Content-Type: application/json
+
+{
+    "email": "test50@gmail.com",
+    "password": "12345678",
+    "confPassword": "12345678"
+}
+
+# Delete User
+###
+DELETE http://localhost:9900/users/c73995fe-84ba-4ddb-a0c4-8239c3fe0461
+
+# Login
+###
+POST http://localhost:9900/login
+Content-Type: application/json
+
+{
+    "email": "admin@gmail.com",
+    "password": "12345678"
+}
+
+# Still Login?
+###
+GET http://localhost:9900/Me
+
+# Logout
+###
+DELETE http://localhost:9900/logout
+
+###
+GET http://localhost:9900/proker
+
+###
+DELETE http://localhost:9900/proker/041f7d40-faa3-47a6-972d-6177653b2182
+
+###
+GET http://localhost:9900/galery
+
+###
+GET http://localhost:9900/members
+
+###
+GET http://localhost:9900/history

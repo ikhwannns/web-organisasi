@@ -1,0 +1,44 @@
+:root {
+  --bg: #151c2c;
+  --bgSoft: #182237;
+  --text: white;
+  --text-soft: #b7bac1;
+}
+
+.container {
+  display: flex;
+}
+
+.menu {
+  flex: 1;
+  background-color: var(--bgSoft);
+  padding: 20px;
+}
+
+.content {
+  flex: 4;
+  padding: 20px;
+}
+
+.wrapper {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.main {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.side {
+  flex: 1;
+}
